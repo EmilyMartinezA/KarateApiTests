@@ -1,0 +1,482 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.co.choucair.ApiTest.TestRunner" time="5.59" tests="5" errors="0" skipped="0" failures="5">
+  <properties>
+    <property name="java.specification.version" value="21"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\emartineza\Downloads\KarateApiTests\target\test-classes;C:\Users\emartineza\Downloads\KarateApiTests\target\classes;C:\Users\emartineza\.m2\repository\io\karatelabs\karate-junit5\1.5.0\karate-junit5-1.5.0.jar;C:\Users\emartineza\.m2\repository\io\karatelabs\karate-core\1.5.0\karate-core-1.5.0.jar;C:\Users\emartineza\.m2\repository\org\graalvm\js\js-scriptengine\24.0.0\js-scriptengine-24.0.0.jar;C:\Users\emartineza\.m2\repository\org\graalvm\polyglot\polyglot\24.0.0\polyglot-24.0.0.jar;C:\Users\emartineza\.m2\repository\org\graalvm\sdk\collections\24.0.0\collections-24.0.0.jar;C:\Users\emartineza\.m2\repository\org\graalvm\sdk\nativeimage\24.0.0\nativeimage-24.0.0.jar;C:\Users\emartineza\.m2\repository\org\graalvm\sdk\word\24.0.0\word-24.0.0.jar;C:\Users\emartineza\.m2\repository\org\graalvm\js\js-language\24.0.0\js-language-24.0.0.jar;C:\Users\emartineza\.m2\repository\org\graalvm\regex\regex\24.0.0\regex-24.0.0.jar;C:\Users\emartineza\.m2\repository\org\graalvm\truffle\truffle-api\24.0.0\truffle-api-24.0.0.jar;C:\Users\emartineza\.m2\repository\org\graalvm\shadowed\icu4j\24.0.0\icu4j-24.0.0.jar;C:\Users\emartineza\.m2\repository\org\thymeleaf\thymeleaf\3.1.2.RELEASE\thymeleaf-3.1.2.RELEASE.jar;C:\Users\emartineza\.m2\repository\ognl\ognl\3.3.4\ognl-3.3.4.jar;C:\Users\emartineza\.m2\repository\org\javassist\javassist\3.29.0-GA\javassist-3.29.0-GA.jar;C:\Users\emartineza\.m2\repository\org\attoparser\attoparser\2.0.7.RELEASE\attoparser-2.0.7.RELEASE.jar;C:\Users\emartineza\.m2\repository\org\unbescape\unbescape\1.1.6.RELEASE\unbescape-1.1.6.RELEASE.jar;C:\Users\emartineza\.m2\repository\com\linecorp\armeria\armeria\1.29.2\armeria-1.29.2.jar;C:\Users\emartineza\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.17.1\jackson-core-2.17.1.jar;C:\Users\emartineza\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.17.1\jackson-annotations-2.17.1.jar;C:\Users\emartineza\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.17.1\jackson-databind-2.17.1.jar;C:\Users\emartineza\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.17.1\jackson-datatype-jdk8-2.17.1.jar;C:\Users\emartineza\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.17.1\jackson-datatype-jsr310-2.17.1.jar;C:\Users\emartineza\.m2\repository\io\micrometer\micrometer-core\1.13.0\micrometer-core-1.13.0.jar;C:\Users\emartineza\.m2\repository\io\micrometer\micrometer-commons\1.13.0\micrometer-commons-1.13.0.jar;C:\Users\emartineza\.m2\repository\io\micrometer\micrometer-observation\1.13.0\micrometer-observation-1.13.0.jar;C:\Users\emartineza\.m2\repository\org\hdrhistogram\HdrHistogram\2.2.1\HdrHistogram-2.2.1.jar;C:\Users\emartineza\.m2\repository\org\latencyutils\LatencyUtils\2.0.3\LatencyUtils-2.0.3.jar;C:\Users\emartineza\.m2\repository\io\netty\netty-transport\4.1.110.Final\netty-transport-4.1.110.Final.jar;C:\Users\emartineza\.m2\repository\io\netty\netty-common\4.1.110.Final\netty-common-4.1.110.Final.jar;C:\Users\emartineza\.m2\repository\io\netty\netty-buffer\4.1.110.Final\netty-buffer-4.1.110.Final.jar;C:\Users\emartineza\.m2\repository\io\netty\netty-resolver\4.1.110.Final\netty-resolver-4.1.110.Final.jar;C:\Users\emartineza\.m2\repository\io\netty\netty-codec-haproxy\4.1.110.Final\netty-codec-haproxy-4.1.110.Final.jar;C:\Users\emartineza\.m2\repository\io\netty\netty-codec\4.1.110.Final\netty-codec-4.1.110.Final.jar;C:\Users\emartineza\.m2\repository\io\netty\netty-codec-http2\4.1.110.Final\netty-codec-http2-4.1.110.Final.jar;C:\Users\emartineza\.m2\repository\io\netty\netty-handler\4.1.110.Final\netty-handler-4.1.110.Final.jar;C:\Users\emartineza\.m2\repository\io\netty\netty-codec-http\4.1.110.Final\netty-codec-http-4.1.110.Final.jar;C:\Users\emartineza\.m2\repository\io\netty\netty-resolver-dns\4.1.110.Final\netty-resolver-dns-4.1.110.Final.jar;C:\Users\emartineza\.m2\repository\io\netty\netty-codec-dns\4.1.110.Final\netty-codec-dns-4.1.110.Final.jar;C:\Users\emartineza\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.110.Final\netty-transport-native-unix-common-4.1.110.Final-linux-x86_64.jar;C:\Users\emartineza\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.110.Final\netty-transport-native-unix-common-4.1.110.Final-linux-aarch_64.jar;C:\Users\emartineza\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.110.Final\netty-transport-native-unix-common-4.1.110.Final-osx-x86_64.jar;C:\Users\emartineza\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.110.Final\netty-transport-native-unix-common-4.1.110.Final-osx-aarch_64.jar;C:\Users\emartineza\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\emartineza\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\emartineza\.m2\repository\io\netty\netty-handler-proxy\4.1.110.Final\netty-handler-proxy-4.1.110.Final.jar;C:\Users\emartineza\.m2\repository\io\netty\netty-codec-socks\4.1.110.Final\netty-codec-socks-4.1.110.Final.jar;C:\Users\emartineza\.m2\repository\io\netty\netty-transport-native-epoll\4.1.110.Final\netty-transport-native-epoll-4.1.110.Final-linux-x86_64.jar;C:\Users\emartineza\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.110.Final\netty-transport-native-unix-common-4.1.110.Final.jar;C:\Users\emartineza\.m2\repository\io\netty\netty-transport-classes-epoll\4.1.110.Final\netty-transport-classes-epoll-4.1.110.Final.jar;C:\Users\emartineza\.m2\repository\io\netty\netty-transport-native-epoll\4.1.110.Final\netty-transport-native-epoll-4.1.110.Final-linux-aarch_64.jar;C:\Users\emartineza\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.110.Final\netty-transport-native-kqueue-4.1.110.Final-osx-x86_64.jar;C:\Users\emartineza\.m2\repository\io\netty\netty-transport-classes-kqueue\4.1.110.Final\netty-transport-classes-kqueue-4.1.110.Final.jar;C:\Users\emartineza\.m2\repository\io\netty\netty-resolver-dns-native-macos\4.1.110.Final\netty-resolver-dns-native-macos-4.1.110.Final-osx-x86_64.jar;C:\Users\emartineza\.m2\repository\io\netty\netty-resolver-dns-classes-macos\4.1.110.Final\netty-resolver-dns-classes-macos-4.1.110.Final.jar;C:\Users\emartineza\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.110.Final\netty-transport-native-kqueue-4.1.110.Final-osx-aarch_64.jar;C:\Users\emartineza\.m2\repository\io\netty\netty-resolver-dns-native-macos\4.1.110.Final\netty-resolver-dns-native-macos-4.1.110.Final-osx-aarch_64.jar;C:\Users\emartineza\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.65.Final\netty-tcnative-boringssl-static-2.0.65.Final-linux-x86_64.jar;C:\Users\emartineza\.m2\repository\io\netty\netty-tcnative-classes\2.0.65.Final\netty-tcnative-classes-2.0.65.Final.jar;C:\Users\emartineza\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.65.Final\netty-tcnative-boringssl-static-2.0.65.Final-linux-aarch_64.jar;C:\Users\emartineza\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.65.Final\netty-tcnative-boringssl-static-2.0.65.Final-osx-x86_64.jar;C:\Users\emartineza\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.65.Final\netty-tcnative-boringssl-static-2.0.65.Final-osx-aarch_64.jar;C:\Users\emartineza\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.65.Final\netty-tcnative-boringssl-static-2.0.65.Final-windows-x86_64.jar;C:\Users\emartineza\.m2\repository\com\aayushatharva\brotli4j\brotli4j\1.16.0\brotli4j-1.16.0.jar;C:\Users\emartineza\.m2\repository\com\aayushatharva\brotli4j\service\1.16.0\service-1.16.0.jar;C:\Users\emartineza\.m2\repository\com\aayushatharva\brotli4j\native-windows-x86_64\1.16.0\native-windows-x86_64-1.16.0.jar;C:\Users\emartineza\.m2\repository\org\apache\httpcomponents\httpclient\4.5.14\httpclient-4.5.14.jar;C:\Users\emartineza\.m2\repository\org\apache\httpcomponents\httpcore\4.4.16\httpcore-4.4.16.jar;C:\Users\emartineza\.m2\repository\commons-codec\commons-codec\1.16.1\commons-codec-1.16.1.jar;C:\Users\emartineza\.m2\repository\ch\qos\logback\logback-classic\1.5.4\logback-classic-1.5.4.jar;C:\Users\emartineza\.m2\repository\ch\qos\logback\logback-core\1.5.4\logback-core-1.5.4.jar;C:\Users\emartineza\.m2\repository\org\slf4j\jcl-over-slf4j\2.0.12\jcl-over-slf4j-2.0.12.jar;C:\Users\emartineza\.m2\repository\org\slf4j\slf4j-api\2.0.12\slf4j-api-2.0.12.jar;C:\Users\emartineza\.m2\repository\org\antlr\antlr4-runtime\4.13.1\antlr4-runtime-4.13.1.jar;C:\Users\emartineza\.m2\repository\com\jayway\jsonpath\json-path\2.9.0\json-path-2.9.0.jar;C:\Users\emartineza\.m2\repository\net\minidev\json-smart\2.5.1\json-smart-2.5.1.jar;C:\Users\emartineza\.m2\repository\net\minidev\accessors-smart\2.5.1\accessors-smart-2.5.1.jar;C:\Users\emartineza\.m2\repository\org\ow2\asm\asm\9.6\asm-9.6.jar;C:\Users\emartineza\.m2\repository\org\yaml\snakeyaml\2.2\snakeyaml-2.2.jar;C:\Users\emartineza\.m2\repository\de\siegmar\fastcsv\3.1.0\fastcsv-3.1.0.jar;C:\Users\emartineza\.m2\repository\info\picocli\picocli\4.7.5\picocli-4.7.5.jar;C:\Users\emartineza\.m2\repository\io\github\classgraph\classgraph\4.8.170\classgraph-4.8.170.jar;C:\Users\emartineza\.m2\repository\io\github\t12y\resemble\1.1.0\resemble-1.1.0.jar;C:\Users\emartineza\.m2\repository\io\github\t12y\ssim\1.0.0\ssim-1.0.0.jar;C:\Users\emartineza\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.2\junit-jupiter-api-5.10.2.jar;C:\Users\emartineza\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\emartineza\.m2\repository\org\junit\platform\junit-platform-commons\1.10.2\junit-platform-commons-1.10.2.jar;C:\Users\emartineza\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\emartineza\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.2\junit-jupiter-engine-5.10.2.jar;C:\Users\emartineza\.m2\repository\org\junit\platform\junit-platform-engine\1.10.2\junit-platform-engine-1.10.2.jar;"/>
+    <property name="java.vm.vendor" value="Amazon.com Inc."/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://aws.amazon.com/corretto/"/>
+    <property name="user.timezone" value="America/Bogota"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="21"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="CO"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Amazon Corretto\jdk21.0.11_10\bin"/>
+    <property name="sun.java.command" value="C:\Users\emartineza\AppData\Local\Temp\surefire11895353606352472168\surefirebooter-20260528100531791_3.jar C:\Users\emartineza\AppData\Local\Temp\surefire11895353606352472168 2026-05-28T10-05-31_600-jvmRun1 surefire-20260528100531791_1tmp surefire_0-20260528100531791_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\emartineza\Downloads\KarateApiTests\target\test-classes;C:\Users\emartineza\Downloads\KarateApiTests\target\classes;C:\Users\emartineza\.m2\repository\io\karatelabs\karate-junit5\1.5.0\karate-junit5-1.5.0.jar;C:\Users\emartineza\.m2\repository\io\karatelabs\karate-core\1.5.0\karate-core-1.5.0.jar;C:\Users\emartineza\.m2\repository\org\graalvm\js\js-scriptengine\24.0.0\js-scriptengine-24.0.0.jar;C:\Users\emartineza\.m2\repository\org\graalvm\polyglot\polyglot\24.0.0\polyglot-24.0.0.jar;C:\Users\emartineza\.m2\repository\org\graalvm\sdk\collections\24.0.0\collections-24.0.0.jar;C:\Users\emartineza\.m2\repository\org\graalvm\sdk\nativeimage\24.0.0\nativeimage-24.0.0.jar;C:\Users\emartineza\.m2\repository\org\graalvm\sdk\word\24.0.0\word-24.0.0.jar;C:\Users\emartineza\.m2\repository\org\graalvm\js\js-language\24.0.0\js-language-24.0.0.jar;C:\Users\emartineza\.m2\repository\org\graalvm\regex\regex\24.0.0\regex-24.0.0.jar;C:\Users\emartineza\.m2\repository\org\graalvm\truffle\truffle-api\24.0.0\truffle-api-24.0.0.jar;C:\Users\emartineza\.m2\repository\org\graalvm\shadowed\icu4j\24.0.0\icu4j-24.0.0.jar;C:\Users\emartineza\.m2\repository\org\thymeleaf\thymeleaf\3.1.2.RELEASE\thymeleaf-3.1.2.RELEASE.jar;C:\Users\emartineza\.m2\repository\ognl\ognl\3.3.4\ognl-3.3.4.jar;C:\Users\emartineza\.m2\repository\org\javassist\javassist\3.29.0-GA\javassist-3.29.0-GA.jar;C:\Users\emartineza\.m2\repository\org\attoparser\attoparser\2.0.7.RELEASE\attoparser-2.0.7.RELEASE.jar;C:\Users\emartineza\.m2\repository\org\unbescape\unbescape\1.1.6.RELEASE\unbescape-1.1.6.RELEASE.jar;C:\Users\emartineza\.m2\repository\com\linecorp\armeria\armeria\1.29.2\armeria-1.29.2.jar;C:\Users\emartineza\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.17.1\jackson-core-2.17.1.jar;C:\Users\emartineza\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.17.1\jackson-annotations-2.17.1.jar;C:\Users\emartineza\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.17.1\jackson-databind-2.17.1.jar;C:\Users\emartineza\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.17.1\jackson-datatype-jdk8-2.17.1.jar;C:\Users\emartineza\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.17.1\jackson-datatype-jsr310-2.17.1.jar;C:\Users\emartineza\.m2\repository\io\micrometer\micrometer-core\1.13.0\micrometer-core-1.13.0.jar;C:\Users\emartineza\.m2\repository\io\micrometer\micrometer-commons\1.13.0\micrometer-commons-1.13.0.jar;C:\Users\emartineza\.m2\repository\io\micrometer\micrometer-observation\1.13.0\micrometer-observation-1.13.0.jar;C:\Users\emartineza\.m2\repository\org\hdrhistogram\HdrHistogram\2.2.1\HdrHistogram-2.2.1.jar;C:\Users\emartineza\.m2\repository\org\latencyutils\LatencyUtils\2.0.3\LatencyUtils-2.0.3.jar;C:\Users\emartineza\.m2\repository\io\netty\netty-transport\4.1.110.Final\netty-transport-4.1.110.Final.jar;C:\Users\emartineza\.m2\repository\io\netty\netty-common\4.1.110.Final\netty-common-4.1.110.Final.jar;C:\Users\emartineza\.m2\repository\io\netty\netty-buffer\4.1.110.Final\netty-buffer-4.1.110.Final.jar;C:\Users\emartineza\.m2\repository\io\netty\netty-resolver\4.1.110.Final\netty-resolver-4.1.110.Final.jar;C:\Users\emartineza\.m2\repository\io\netty\netty-codec-haproxy\4.1.110.Final\netty-codec-haproxy-4.1.110.Final.jar;C:\Users\emartineza\.m2\repository\io\netty\netty-codec\4.1.110.Final\netty-codec-4.1.110.Final.jar;C:\Users\emartineza\.m2\repository\io\netty\netty-codec-http2\4.1.110.Final\netty-codec-http2-4.1.110.Final.jar;C:\Users\emartineza\.m2\repository\io\netty\netty-handler\4.1.110.Final\netty-handler-4.1.110.Final.jar;C:\Users\emartineza\.m2\repository\io\netty\netty-codec-http\4.1.110.Final\netty-codec-http-4.1.110.Final.jar;C:\Users\emartineza\.m2\repository\io\netty\netty-resolver-dns\4.1.110.Final\netty-resolver-dns-4.1.110.Final.jar;C:\Users\emartineza\.m2\repository\io\netty\netty-codec-dns\4.1.110.Final\netty-codec-dns-4.1.110.Final.jar;C:\Users\emartineza\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.110.Final\netty-transport-native-unix-common-4.1.110.Final-linux-x86_64.jar;C:\Users\emartineza\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.110.Final\netty-transport-native-unix-common-4.1.110.Final-linux-aarch_64.jar;C:\Users\emartineza\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.110.Final\netty-transport-native-unix-common-4.1.110.Final-osx-x86_64.jar;C:\Users\emartineza\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.110.Final\netty-transport-native-unix-common-4.1.110.Final-osx-aarch_64.jar;C:\Users\emartineza\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\emartineza\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\emartineza\.m2\repository\io\netty\netty-handler-proxy\4.1.110.Final\netty-handler-proxy-4.1.110.Final.jar;C:\Users\emartineza\.m2\repository\io\netty\netty-codec-socks\4.1.110.Final\netty-codec-socks-4.1.110.Final.jar;C:\Users\emartineza\.m2\repository\io\netty\netty-transport-native-epoll\4.1.110.Final\netty-transport-native-epoll-4.1.110.Final-linux-x86_64.jar;C:\Users\emartineza\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.110.Final\netty-transport-native-unix-common-4.1.110.Final.jar;C:\Users\emartineza\.m2\repository\io\netty\netty-transport-classes-epoll\4.1.110.Final\netty-transport-classes-epoll-4.1.110.Final.jar;C:\Users\emartineza\.m2\repository\io\netty\netty-transport-native-epoll\4.1.110.Final\netty-transport-native-epoll-4.1.110.Final-linux-aarch_64.jar;C:\Users\emartineza\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.110.Final\netty-transport-native-kqueue-4.1.110.Final-osx-x86_64.jar;C:\Users\emartineza\.m2\repository\io\netty\netty-transport-classes-kqueue\4.1.110.Final\netty-transport-classes-kqueue-4.1.110.Final.jar;C:\Users\emartineza\.m2\repository\io\netty\netty-resolver-dns-native-macos\4.1.110.Final\netty-resolver-dns-native-macos-4.1.110.Final-osx-x86_64.jar;C:\Users\emartineza\.m2\repository\io\netty\netty-resolver-dns-classes-macos\4.1.110.Final\netty-resolver-dns-classes-macos-4.1.110.Final.jar;C:\Users\emartineza\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.110.Final\netty-transport-native-kqueue-4.1.110.Final-osx-aarch_64.jar;C:\Users\emartineza\.m2\repository\io\netty\netty-resolver-dns-native-macos\4.1.110.Final\netty-resolver-dns-native-macos-4.1.110.Final-osx-aarch_64.jar;C:\Users\emartineza\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.65.Final\netty-tcnative-boringssl-static-2.0.65.Final-linux-x86_64.jar;C:\Users\emartineza\.m2\repository\io\netty\netty-tcnative-classes\2.0.65.Final\netty-tcnative-classes-2.0.65.Final.jar;C:\Users\emartineza\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.65.Final\netty-tcnative-boringssl-static-2.0.65.Final-linux-aarch_64.jar;C:\Users\emartineza\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.65.Final\netty-tcnative-boringssl-static-2.0.65.Final-osx-x86_64.jar;C:\Users\emartineza\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.65.Final\netty-tcnative-boringssl-static-2.0.65.Final-osx-aarch_64.jar;C:\Users\emartineza\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.65.Final\netty-tcnative-boringssl-static-2.0.65.Final-windows-x86_64.jar;C:\Users\emartineza\.m2\repository\com\aayushatharva\brotli4j\brotli4j\1.16.0\brotli4j-1.16.0.jar;C:\Users\emartineza\.m2\repository\com\aayushatharva\brotli4j\service\1.16.0\service-1.16.0.jar;C:\Users\emartineza\.m2\repository\com\aayushatharva\brotli4j\native-windows-x86_64\1.16.0\native-windows-x86_64-1.16.0.jar;C:\Users\emartineza\.m2\repository\org\apache\httpcomponents\httpclient\4.5.14\httpclient-4.5.14.jar;C:\Users\emartineza\.m2\repository\org\apache\httpcomponents\httpcore\4.4.16\httpcore-4.4.16.jar;C:\Users\emartineza\.m2\repository\commons-codec\commons-codec\1.16.1\commons-codec-1.16.1.jar;C:\Users\emartineza\.m2\repository\ch\qos\logback\logback-classic\1.5.4\logback-classic-1.5.4.jar;C:\Users\emartineza\.m2\repository\ch\qos\logback\logback-core\1.5.4\logback-core-1.5.4.jar;C:\Users\emartineza\.m2\repository\org\slf4j\jcl-over-slf4j\2.0.12\jcl-over-slf4j-2.0.12.jar;C:\Users\emartineza\.m2\repository\org\slf4j\slf4j-api\2.0.12\slf4j-api-2.0.12.jar;C:\Users\emartineza\.m2\repository\org\antlr\antlr4-runtime\4.13.1\antlr4-runtime-4.13.1.jar;C:\Users\emartineza\.m2\repository\com\jayway\jsonpath\json-path\2.9.0\json-path-2.9.0.jar;C:\Users\emartineza\.m2\repository\net\minidev\json-smart\2.5.1\json-smart-2.5.1.jar;C:\Users\emartineza\.m2\repository\net\minidev\accessors-smart\2.5.1\accessors-smart-2.5.1.jar;C:\Users\emartineza\.m2\repository\org\ow2\asm\asm\9.6\asm-9.6.jar;C:\Users\emartineza\.m2\repository\org\yaml\snakeyaml\2.2\snakeyaml-2.2.jar;C:\Users\emartineza\.m2\repository\de\siegmar\fastcsv\3.1.0\fastcsv-3.1.0.jar;C:\Users\emartineza\.m2\repository\info\picocli\picocli\4.7.5\picocli-4.7.5.jar;C:\Users\emartineza\.m2\repository\io\github\classgraph\classgraph\4.8.170\classgraph-4.8.170.jar;C:\Users\emartineza\.m2\repository\io\github\t12y\resemble\1.1.0\resemble-1.1.0.jar;C:\Users\emartineza\.m2\repository\io\github\t12y\ssim\1.0.0\ssim-1.0.0.jar;C:\Users\emartineza\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.2\junit-jupiter-api-5.10.2.jar;C:\Users\emartineza\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\emartineza\.m2\repository\org\junit\platform\junit-platform-commons\1.10.2\junit-platform-commons-1.10.2.jar;C:\Users\emartineza\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\emartineza\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.2\junit-jupiter-engine-5.10.2.jar;C:\Users\emartineza\.m2\repository\org\junit\platform\junit-platform-engine\1.10.2\junit-platform-engine-1.10.2.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\emartineza"/>
+    <property name="user.language" value="es"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2026-04-21"/>
+    <property name="java.home" value="C:\Program Files\Amazon Corretto\jdk21.0.11_10"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\emartineza\Downloads\KarateApiTests"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\emartineza\AppData\Local\Temp\surefire11895353606352472168\surefirebooter-20260528100531791_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="21.0.11+10-LTS"/>
+    <property name="user.name" value="emartineza"/>
+    <property name="stdout.encoding" value="Cp1252"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Corretto-21.0.11.10.1"/>
+    <property name="localRepository" value="C:\Users\emartineza\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/corretto/corretto-21/issues/"/>
+    <property name="java.io.tmpdir" value="C:\Users\EMARTI~1\AppData\Local\Temp\"/>
+    <property name="java.version" value="21.0.11"/>
+    <property name="user.dir" value="C:\Users\emartineza\Downloads\KarateApiTests"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Amazon Corretto\jdk21.0.11_10\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Amazon Corretto\jdk21.0.11_10\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\WindowsPowerShell\Scripts;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Program Files\Microsoft VS Code\bin;C:\Users\emartineza\AppData\Local\Microsoft\WindowsApps;;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Amazon.com Inc."/>
+    <property name="java.vm.version" value="21.0.11+10-LTS"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="65.0"/>
+  </properties>
+  <testcase name="[1:9] Obtener lista de posts (GET)" classname="com/co/choucair/ApiTest/api-test-karate" time="2.193">
+    <failure message="status code was: 401, expected: 200, response time in milliseconds: 865, url: https://reqres.in/api/posts, response: &#10;{&quot;error&quot;:&quot;missing_api_key&quot;,&quot;message&quot;:&quot;The x-api-key header is required for this endpoint.&quot;,&quot;hint&quot;:&quot;Send x-api-key for admin calls (/api/*) or Authorization: Bearer &lt;token&gt; for app-user calls (/app/*).&quot;,&quot;next_steps&quot;:[&quot;Go to app.reqres.in/api-keys to get your key&quot;,&quot;Add header: x-api-key: &lt;your_key&gt;&quot;,&quot;For app user endpoints, use Authorization: Bearer &lt;session_token&gt; instead&quot;],&quot;docs_url&quot;:&quot;https://app.reqres.in/docs#authentication&quot;,&quot;example_curl&quot;:&quot;curl -H \&quot;x-api-key: YOUR_API_KEY\&quot; https://api.reqres.in/api/collections&quot;,&quot;_meta&quot;:{&quot;powered_by&quot;:&quot;ReqRes&quot;,&quot;docs_url&quot;:&quot;https://app.reqres.in/documentation&quot;,&quot;upgrade_url&quot;:&quot;https://app.reqres.in/upgrade&quot;,&quot;example_url&quot;:&quot;https://app.reqres.in/examples/notes-app&quot;,&quot;variant&quot;:&quot;v1_b&quot;,&quot;message&quot;:&quot;Missing/invalid key. Grab a free key to keep responses consistent.&quot;,&quot;cta&quot;:{&quot;label&quot;:&quot;Get started&quot;,&quot;url&quot;:&quot;https://app.reqres.in/api-keys&quot;},&quot;context&quot;:&quot;invalid_key&quot;}}&#10;classpath:com/co/choucair/ApiTest/api-test-karate.feature:12" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: 
+status code was: 401, expected: 200, response time in milliseconds: 865, url: https://reqres.in/api/posts, response: 
+{"error":"missing_api_key","message":"The x-api-key header is required for this endpoint.","hint":"Send x-api-key for admin calls (/api/*) or Authorization: Bearer <token> for app-user calls (/app/*).","next_steps":["Go to app.reqres.in/api-keys to get your key","Add header: x-api-key: <your_key>","For app user endpoints, use Authorization: Bearer <session_token> instead"],"docs_url":"https://app.reqres.in/docs#authentication","example_curl":"curl -H \"x-api-key: YOUR_API_KEY\" https://api.reqres.in/api/collections","_meta":{"powered_by":"ReqRes","docs_url":"https://app.reqres.in/documentation","upgrade_url":"https://app.reqres.in/upgrade","example_url":"https://app.reqres.in/examples/notes-app","variant":"v1_b","message":"Missing/invalid key. Grab a free key to keep responses consistent.","cta":{"label":"Get started","url":"https://app.reqres.in/api-keys"},"context":"invalid_key"}}
+classpath:com/co/choucair/ApiTest/api-test-karate.feature:12
+	at com.intuit.karate.junit5.FeatureNode.lambda$next$1(FeatureNode.java:86)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1939)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEachOrdered(ReferencePipeline.java:601)
+	at java.base/java.util.Optional.ifPresent(Optional.java:178)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+]]></failure>
+    <system-out><![CDATA[10:05:33.234 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+10:05:34.254 [main] INFO  com.intuit.karate - karate.env system property was: null 
+10:05:34.560 [main] DEBUG com.intuit.karate - request:
+1 > GET https://reqres.in/api/posts
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.11)
+1 > Accept-Encoding: gzip,deflate
+
+
+10:05:35.432 [main] DEBUG com.intuit.karate - response time in milliseconds: 865
+1 < 401
+1 < Date: Thu, 28 May 2026 15:05:35 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 895
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < Cache-Control: no-store
+1 < Cross-Origin-Opener-Policy: same-origin
+1 < Cross-Origin-Resource-Policy: same-origin
+1 < Etag: W/"37f-NsZXA5wLvj0UkmsYJbtRNgFYDoo"
+1 < Nel: {"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}
+1 < Origin-Agent-Cluster: ?1
+1 < Referrer-Policy: strict-origin-when-cross-origin
+1 < Report-To: {"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=r9OPqHm5vGFLpcY2PvpQykxPtHvra7OA9RRv3jgP8yg%3D\u0026sid=c4c9725f-1ab0-44d8-820f-430df2718e11\u0026ts=1779980734"}],"max_age":3600}
+1 < Reporting-Endpoints: heroku-nel="https://nel.heroku.com/reports?s=r9OPqHm5vGFLpcY2PvpQykxPtHvra7OA9RRv3jgP8yg%3D&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&ts=1779980734"
+1 < Server: cloudflare
+1 < Strict-Transport-Security: max-age=31536000; includeSubDomains
+1 < Via: 1.1 heroku-router
+1 < X-Content-Type-Options: nosniff
+1 < X-Dns-Prefetch-Control: off
+1 < X-Download-Options: noopen
+1 < X-Frame-Options: DENY
+1 < X-Permitted-Cross-Domain-Policies: none
+1 < X-Powered-By: ReqRes.in - Deploy backends in 30 seconds
+1 < X-Reqres-Docs: https://reqres.in
+1 < X-Reqres-Help: missing_api_key
+1 < X-Reqres-Message: This API is powered by ReqRes. Deploy your own backend in 30 seconds!
+1 < X-Reqres-Templates: https://app.reqres.in/templates
+1 < X-Reqres-Tip: Generate a complete backend from a description - app.reqres.in/dashboard
+1 < X-Reqres-Upgrade: https://app.reqres.in/upgrade
+1 < X-Request-Id: ee4e5cae-61d4-ff98-809e-7ef7183076fb
+1 < X-Robots-Tag: noindex, nofollow
+1 < X-Xss-Protection: 0
+1 < cf-cache-status: BYPASS
+1 < CF-RAY: a02e288828524736-BOG
+{"error":"missing_api_key","message":"The x-api-key header is required for this endpoint.","hint":"Send x-api-key for admin calls (/api/*) or Authorization: Bearer <token> for app-user calls (/app/*).","next_steps":["Go to app.reqres.in/api-keys to get your key","Add header: x-api-key: <your_key>","For app user endpoints, use Authorization: Bearer <session_token> instead"],"docs_url":"https://app.reqres.in/docs#authentication","example_curl":"curl -H \"x-api-key: YOUR_API_KEY\" https://api.reqres.in/api/collections","_meta":{"powered_by":"ReqRes","docs_url":"https://app.reqres.in/documentation","upgrade_url":"https://app.reqres.in/upgrade","example_url":"https://app.reqres.in/examples/notes-app","variant":"v1_b","message":"Missing/invalid key. Grab a free key to keep responses consistent.","cta":{"label":"Get started","url":"https://app.reqres.in/api-keys"},"context":"invalid_key"}}
+
+10:05:35.444 [main] ERROR com.intuit.karate - classpath:com/co/choucair/ApiTest/api-test-karate.feature:12
+Then status 200
+status code was: 401, expected: 200, response time in milliseconds: 865, url: https://reqres.in/api/posts, response: 
+{"error":"missing_api_key","message":"The x-api-key header is required for this endpoint.","hint":"Send x-api-key for admin calls (/api/*) or Authorization: Bearer <token> for app-user calls (/app/*).","next_steps":["Go to app.reqres.in/api-keys to get your key","Add header: x-api-key: <your_key>","For app user endpoints, use Authorization: Bearer <session_token> instead"],"docs_url":"https://app.reqres.in/docs#authentication","example_curl":"curl -H \"x-api-key: YOUR_API_KEY\" https://api.reqres.in/api/collections","_meta":{"powered_by":"ReqRes","docs_url":"https://app.reqres.in/documentation","upgrade_url":"https://app.reqres.in/upgrade","example_url":"https://app.reqres.in/examples/notes-app","variant":"v1_b","message":"Missing/invalid key. Grab a free key to keep responses consistent.","cta":{"label":"Get started","url":"https://app.reqres.in/api-keys"},"context":"invalid_key"}}
+classpath:com/co/choucair/ApiTest/api-test-karate.feature:12
+]]></system-out>
+  </testcase>
+  <testcase name="[2:22] Crear un nuevo post (POST)" classname="com/co/choucair/ApiTest/api-test-karate" time="0.603">
+    <failure message="status code was: 401, expected: 201, response time in milliseconds: 536, url: https://reqres.in/api/posts, response: &#10;{&quot;error&quot;:&quot;missing_api_key&quot;,&quot;message&quot;:&quot;The x-api-key header is required for this endpoint.&quot;,&quot;hint&quot;:&quot;Send x-api-key for admin calls (/api/*) or Authorization: Bearer &lt;token&gt; for app-user calls (/app/*).&quot;,&quot;next_steps&quot;:[&quot;Go to app.reqres.in/api-keys to get your key&quot;,&quot;Add header: x-api-key: &lt;your_key&gt;&quot;,&quot;For app user endpoints, use Authorization: Bearer &lt;session_token&gt; instead&quot;],&quot;docs_url&quot;:&quot;https://app.reqres.in/docs#authentication&quot;,&quot;example_curl&quot;:&quot;curl -H \&quot;x-api-key: YOUR_API_KEY\&quot; https://api.reqres.in/api/collections&quot;,&quot;_meta&quot;:{&quot;powered_by&quot;:&quot;ReqRes&quot;,&quot;docs_url&quot;:&quot;https://app.reqres.in/documentation&quot;,&quot;upgrade_url&quot;:&quot;https://app.reqres.in/upgrade&quot;,&quot;example_url&quot;:&quot;https://app.reqres.in/examples/notes-app&quot;,&quot;variant&quot;:&quot;v1_b&quot;,&quot;message&quot;:&quot;Missing/invalid key. Grab a free key to keep responses consistent.&quot;,&quot;cta&quot;:{&quot;label&quot;:&quot;Get started&quot;,&quot;url&quot;:&quot;https://app.reqres.in/api-keys&quot;},&quot;context&quot;:&quot;invalid_key&quot;}}&#10;classpath:com/co/choucair/ApiTest/api-test-karate.feature:26" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: 
+status code was: 401, expected: 201, response time in milliseconds: 536, url: https://reqres.in/api/posts, response: 
+{"error":"missing_api_key","message":"The x-api-key header is required for this endpoint.","hint":"Send x-api-key for admin calls (/api/*) or Authorization: Bearer <token> for app-user calls (/app/*).","next_steps":["Go to app.reqres.in/api-keys to get your key","Add header: x-api-key: <your_key>","For app user endpoints, use Authorization: Bearer <session_token> instead"],"docs_url":"https://app.reqres.in/docs#authentication","example_curl":"curl -H \"x-api-key: YOUR_API_KEY\" https://api.reqres.in/api/collections","_meta":{"powered_by":"ReqRes","docs_url":"https://app.reqres.in/documentation","upgrade_url":"https://app.reqres.in/upgrade","example_url":"https://app.reqres.in/examples/notes-app","variant":"v1_b","message":"Missing/invalid key. Grab a free key to keep responses consistent.","cta":{"label":"Get started","url":"https://app.reqres.in/api-keys"},"context":"invalid_key"}}
+classpath:com/co/choucair/ApiTest/api-test-karate.feature:26
+	at com.intuit.karate.junit5.FeatureNode.lambda$next$1(FeatureNode.java:86)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1939)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEachOrdered(ReferencePipeline.java:601)
+	at java.base/java.util.Optional.ifPresent(Optional.java:178)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+]]></failure>
+    <system-out><![CDATA[10:05:35.471 [main] INFO  com.intuit.karate - karate.env system property was: null 
+10:05:35.526 [main] DEBUG com.intuit.karate - request:
+1 > POST https://reqres.in/api/posts
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 63
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.11)
+1 > Accept-Encoding: gzip,deflate
+{"title":"Karate Test","body":"Automatización API","userId":1}
+
+10:05:36.063 [main] DEBUG com.intuit.karate - response time in milliseconds: 536
+1 < 401
+1 < Date: Thu, 28 May 2026 15:05:35 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 895
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < Cache-Control: no-store
+1 < Cross-Origin-Opener-Policy: same-origin
+1 < Cross-Origin-Resource-Policy: same-origin
+1 < Etag: W/"37f-NsZXA5wLvj0UkmsYJbtRNgFYDoo"
+1 < Nel: {"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}
+1 < Origin-Agent-Cluster: ?1
+1 < Referrer-Policy: strict-origin-when-cross-origin
+1 < Report-To: {"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=bSTavOvq2Q1MuQPTKoa3jsztrqOFe2r3lS0IxA9%2F36M%3D\u0026sid=c4c9725f-1ab0-44d8-820f-430df2718e11\u0026ts=1779980735"}],"max_age":3600}
+1 < Reporting-Endpoints: heroku-nel="https://nel.heroku.com/reports?s=bSTavOvq2Q1MuQPTKoa3jsztrqOFe2r3lS0IxA9%2F36M%3D&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&ts=1779980735"
+1 < Server: cloudflare
+1 < Strict-Transport-Security: max-age=31536000; includeSubDomains
+1 < Via: 1.1 heroku-router
+1 < X-Content-Type-Options: nosniff
+1 < X-Dns-Prefetch-Control: off
+1 < X-Download-Options: noopen
+1 < X-Frame-Options: DENY
+1 < X-Permitted-Cross-Domain-Policies: none
+1 < X-Powered-By: ReqRes.in - Deploy backends in 30 seconds
+1 < X-Reqres-Docs: https://reqres.in
+1 < X-Reqres-Help: missing_api_key
+1 < X-Reqres-Message: This API is powered by ReqRes. Deploy your own backend in 30 seconds!
+1 < X-Reqres-Templates: https://app.reqres.in/templates
+1 < X-Reqres-Tip: Add real user auth to your app with magic codes - reqres.in/docs
+1 < X-Reqres-Upgrade: https://app.reqres.in/upgrade
+1 < X-Request-Id: 1121341a-c635-de20-38c9-6fc720bd78e0
+1 < X-Robots-Tag: noindex, nofollow
+1 < X-Xss-Protection: 0
+1 < cf-cache-status: DYNAMIC
+1 < CF-RAY: a02e288c49dce336-BOG
+{"error":"missing_api_key","message":"The x-api-key header is required for this endpoint.","hint":"Send x-api-key for admin calls (/api/*) or Authorization: Bearer <token> for app-user calls (/app/*).","next_steps":["Go to app.reqres.in/api-keys to get your key","Add header: x-api-key: <your_key>","For app user endpoints, use Authorization: Bearer <session_token> instead"],"docs_url":"https://app.reqres.in/docs#authentication","example_curl":"curl -H \"x-api-key: YOUR_API_KEY\" https://api.reqres.in/api/collections","_meta":{"powered_by":"ReqRes","docs_url":"https://app.reqres.in/documentation","upgrade_url":"https://app.reqres.in/upgrade","example_url":"https://app.reqres.in/examples/notes-app","variant":"v1_b","message":"Missing/invalid key. Grab a free key to keep responses consistent.","cta":{"label":"Get started","url":"https://app.reqres.in/api-keys"},"context":"invalid_key"}}
+
+10:05:36.065 [main] ERROR com.intuit.karate - classpath:com/co/choucair/ApiTest/api-test-karate.feature:26
+Then status 201
+status code was: 401, expected: 201, response time in milliseconds: 536, url: https://reqres.in/api/posts, response: 
+{"error":"missing_api_key","message":"The x-api-key header is required for this endpoint.","hint":"Send x-api-key for admin calls (/api/*) or Authorization: Bearer <token> for app-user calls (/app/*).","next_steps":["Go to app.reqres.in/api-keys to get your key","Add header: x-api-key: <your_key>","For app user endpoints, use Authorization: Bearer <session_token> instead"],"docs_url":"https://app.reqres.in/docs#authentication","example_curl":"curl -H \"x-api-key: YOUR_API_KEY\" https://api.reqres.in/api/collections","_meta":{"powered_by":"ReqRes","docs_url":"https://app.reqres.in/documentation","upgrade_url":"https://app.reqres.in/upgrade","example_url":"https://app.reqres.in/examples/notes-app","variant":"v1_b","message":"Missing/invalid key. Grab a free key to keep responses consistent.","cta":{"label":"Get started","url":"https://app.reqres.in/api-keys"},"context":"invalid_key"}}
+classpath:com/co/choucair/ApiTest/api-test-karate.feature:26
+]]></system-out>
+  </testcase>
+  <testcase name="[3:37] Actualizar un post (PUT)" classname="com/co/choucair/ApiTest/api-test-karate" time="0.495">
+    <failure message="status code was: 401, expected: 200, response time in milliseconds: 474, url: https://reqres.in/api/posts/1, response: &#10;{&quot;error&quot;:&quot;missing_api_key&quot;,&quot;message&quot;:&quot;The x-api-key header is required for this endpoint.&quot;,&quot;hint&quot;:&quot;Send x-api-key for admin calls (/api/*) or Authorization: Bearer &lt;token&gt; for app-user calls (/app/*).&quot;,&quot;next_steps&quot;:[&quot;Go to app.reqres.in/api-keys to get your key&quot;,&quot;Add header: x-api-key: &lt;your_key&gt;&quot;,&quot;For app user endpoints, use Authorization: Bearer &lt;session_token&gt; instead&quot;],&quot;docs_url&quot;:&quot;https://app.reqres.in/docs#authentication&quot;,&quot;example_curl&quot;:&quot;curl -H \&quot;x-api-key: YOUR_API_KEY\&quot; https://api.reqres.in/api/collections&quot;,&quot;_meta&quot;:{&quot;powered_by&quot;:&quot;ReqRes&quot;,&quot;docs_url&quot;:&quot;https://app.reqres.in/documentation&quot;,&quot;upgrade_url&quot;:&quot;https://app.reqres.in/upgrade&quot;,&quot;example_url&quot;:&quot;https://app.reqres.in/examples/notes-app&quot;,&quot;variant&quot;:&quot;v1_b&quot;,&quot;message&quot;:&quot;Missing/invalid key. Grab a free key to keep responses consistent.&quot;,&quot;cta&quot;:{&quot;label&quot;:&quot;Get started&quot;,&quot;url&quot;:&quot;https://app.reqres.in/api-keys&quot;},&quot;context&quot;:&quot;invalid_key&quot;}}&#10;classpath:com/co/choucair/ApiTest/api-test-karate.feature:43" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: 
+status code was: 401, expected: 200, response time in milliseconds: 474, url: https://reqres.in/api/posts/1, response: 
+{"error":"missing_api_key","message":"The x-api-key header is required for this endpoint.","hint":"Send x-api-key for admin calls (/api/*) or Authorization: Bearer <token> for app-user calls (/app/*).","next_steps":["Go to app.reqres.in/api-keys to get your key","Add header: x-api-key: <your_key>","For app user endpoints, use Authorization: Bearer <session_token> instead"],"docs_url":"https://app.reqres.in/docs#authentication","example_curl":"curl -H \"x-api-key: YOUR_API_KEY\" https://api.reqres.in/api/collections","_meta":{"powered_by":"ReqRes","docs_url":"https://app.reqres.in/documentation","upgrade_url":"https://app.reqres.in/upgrade","example_url":"https://app.reqres.in/examples/notes-app","variant":"v1_b","message":"Missing/invalid key. Grab a free key to keep responses consistent.","cta":{"label":"Get started","url":"https://app.reqres.in/api-keys"},"context":"invalid_key"}}
+classpath:com/co/choucair/ApiTest/api-test-karate.feature:43
+	at com.intuit.karate.junit5.FeatureNode.lambda$next$1(FeatureNode.java:86)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1939)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEachOrdered(ReferencePipeline.java:601)
+	at java.base/java.util.Optional.ifPresent(Optional.java:178)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+]]></failure>
+    <system-out><![CDATA[10:05:36.075 [main] INFO  com.intuit.karate - karate.env system property was: null 
+10:05:36.088 [main] DEBUG com.intuit.karate - request:
+1 > PUT https://reqres.in/api/posts/1
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 65
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.11)
+1 > Accept-Encoding: gzip,deflate
+{"id":1,"title":"Updated Title","body":"Updated Body","userId":1}
+
+10:05:36.562 [main] DEBUG com.intuit.karate - response time in milliseconds: 474
+1 < 401
+1 < Date: Thu, 28 May 2026 15:05:36 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 895
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < Cache-Control: no-store
+1 < Cross-Origin-Opener-Policy: same-origin
+1 < Cross-Origin-Resource-Policy: same-origin
+1 < Etag: W/"37f-NsZXA5wLvj0UkmsYJbtRNgFYDoo"
+1 < Nel: {"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}
+1 < Origin-Agent-Cluster: ?1
+1 < Referrer-Policy: strict-origin-when-cross-origin
+1 < Report-To: {"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=YDSfnd3vsQJwts4qU4h0KUXKyAs8rSIHhAAzT%2FAp51Q%3D\u0026sid=c4c9725f-1ab0-44d8-820f-430df2718e11\u0026ts=1779980736"}],"max_age":3600}
+1 < Reporting-Endpoints: heroku-nel="https://nel.heroku.com/reports?s=YDSfnd3vsQJwts4qU4h0KUXKyAs8rSIHhAAzT%2FAp51Q%3D&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&ts=1779980736"
+1 < Server: cloudflare
+1 < Strict-Transport-Security: max-age=31536000; includeSubDomains
+1 < Via: 1.1 heroku-router
+1 < X-Content-Type-Options: nosniff
+1 < X-Dns-Prefetch-Control: off
+1 < X-Download-Options: noopen
+1 < X-Frame-Options: DENY
+1 < X-Permitted-Cross-Domain-Policies: none
+1 < X-Powered-By: ReqRes.in - Deploy backends in 30 seconds
+1 < X-Reqres-Docs: https://reqres.in
+1 < X-Reqres-Help: missing_api_key
+1 < X-Reqres-Message: This API is powered by ReqRes. Deploy your own backend in 30 seconds!
+1 < X-Reqres-Templates: https://app.reqres.in/templates
+1 < X-Reqres-Tip: Add real user auth to your app with magic codes - reqres.in/docs
+1 < X-Reqres-Upgrade: https://app.reqres.in/upgrade
+1 < X-Request-Id: 3da90795-9c73-0461-30d9-b83491486ffa
+1 < X-Robots-Tag: noindex, nofollow
+1 < X-Xss-Protection: 0
+1 < cf-cache-status: DYNAMIC
+1 < CF-RAY: a02e288f8f8fffac-BOG
+{"error":"missing_api_key","message":"The x-api-key header is required for this endpoint.","hint":"Send x-api-key for admin calls (/api/*) or Authorization: Bearer <token> for app-user calls (/app/*).","next_steps":["Go to app.reqres.in/api-keys to get your key","Add header: x-api-key: <your_key>","For app user endpoints, use Authorization: Bearer <session_token> instead"],"docs_url":"https://app.reqres.in/docs#authentication","example_curl":"curl -H \"x-api-key: YOUR_API_KEY\" https://api.reqres.in/api/collections","_meta":{"powered_by":"ReqRes","docs_url":"https://app.reqres.in/documentation","upgrade_url":"https://app.reqres.in/upgrade","example_url":"https://app.reqres.in/examples/notes-app","variant":"v1_b","message":"Missing/invalid key. Grab a free key to keep responses consistent.","cta":{"label":"Get started","url":"https://app.reqres.in/api-keys"},"context":"invalid_key"}}
+
+10:05:36.564 [main] ERROR com.intuit.karate - classpath:com/co/choucair/ApiTest/api-test-karate.feature:43
+Then status 200
+status code was: 401, expected: 200, response time in milliseconds: 474, url: https://reqres.in/api/posts/1, response: 
+{"error":"missing_api_key","message":"The x-api-key header is required for this endpoint.","hint":"Send x-api-key for admin calls (/api/*) or Authorization: Bearer <token> for app-user calls (/app/*).","next_steps":["Go to app.reqres.in/api-keys to get your key","Add header: x-api-key: <your_key>","For app user endpoints, use Authorization: Bearer <session_token> instead"],"docs_url":"https://app.reqres.in/docs#authentication","example_curl":"curl -H \"x-api-key: YOUR_API_KEY\" https://api.reqres.in/api/collections","_meta":{"powered_by":"ReqRes","docs_url":"https://app.reqres.in/documentation","upgrade_url":"https://app.reqres.in/upgrade","example_url":"https://app.reqres.in/examples/notes-app","variant":"v1_b","message":"Missing/invalid key. Grab a free key to keep responses consistent.","cta":{"label":"Get started","url":"https://app.reqres.in/api-keys"},"context":"invalid_key"}}
+classpath:com/co/choucair/ApiTest/api-test-karate.feature:43
+]]></system-out>
+  </testcase>
+  <testcase name="[4:50] Actualizar parcialmente un post (PATCH)" classname="com/co/choucair/ApiTest/api-test-karate" time="0.335">
+    <failure message="status code was: 401, expected: 200, response time in milliseconds: 324, url: https://reqres.in/api/posts/1, response: &#10;{&quot;error&quot;:&quot;missing_api_key&quot;,&quot;message&quot;:&quot;The x-api-key header is required for this endpoint.&quot;,&quot;hint&quot;:&quot;Send x-api-key for admin calls (/api/*) or Authorization: Bearer &lt;token&gt; for app-user calls (/app/*).&quot;,&quot;next_steps&quot;:[&quot;Go to app.reqres.in/api-keys to get your key&quot;,&quot;Add header: x-api-key: &lt;your_key&gt;&quot;,&quot;For app user endpoints, use Authorization: Bearer &lt;session_token&gt; instead&quot;],&quot;docs_url&quot;:&quot;https://app.reqres.in/docs#authentication&quot;,&quot;example_curl&quot;:&quot;curl -H \&quot;x-api-key: YOUR_API_KEY\&quot; https://api.reqres.in/api/collections&quot;,&quot;_meta&quot;:{&quot;powered_by&quot;:&quot;ReqRes&quot;,&quot;docs_url&quot;:&quot;https://app.reqres.in/documentation&quot;,&quot;upgrade_url&quot;:&quot;https://app.reqres.in/upgrade&quot;,&quot;example_url&quot;:&quot;https://app.reqres.in/examples/notes-app&quot;,&quot;variant&quot;:&quot;v1_b&quot;,&quot;message&quot;:&quot;Missing/invalid key. Grab a free key to keep responses consistent.&quot;,&quot;cta&quot;:{&quot;label&quot;:&quot;Get started&quot;,&quot;url&quot;:&quot;https://app.reqres.in/api-keys&quot;},&quot;context&quot;:&quot;invalid_key&quot;}}&#10;classpath:com/co/choucair/ApiTest/api-test-karate.feature:56" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: 
+status code was: 401, expected: 200, response time in milliseconds: 324, url: https://reqres.in/api/posts/1, response: 
+{"error":"missing_api_key","message":"The x-api-key header is required for this endpoint.","hint":"Send x-api-key for admin calls (/api/*) or Authorization: Bearer <token> for app-user calls (/app/*).","next_steps":["Go to app.reqres.in/api-keys to get your key","Add header: x-api-key: <your_key>","For app user endpoints, use Authorization: Bearer <session_token> instead"],"docs_url":"https://app.reqres.in/docs#authentication","example_curl":"curl -H \"x-api-key: YOUR_API_KEY\" https://api.reqres.in/api/collections","_meta":{"powered_by":"ReqRes","docs_url":"https://app.reqres.in/documentation","upgrade_url":"https://app.reqres.in/upgrade","example_url":"https://app.reqres.in/examples/notes-app","variant":"v1_b","message":"Missing/invalid key. Grab a free key to keep responses consistent.","cta":{"label":"Get started","url":"https://app.reqres.in/api-keys"},"context":"invalid_key"}}
+classpath:com/co/choucair/ApiTest/api-test-karate.feature:56
+	at com.intuit.karate.junit5.FeatureNode.lambda$next$1(FeatureNode.java:86)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1939)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEachOrdered(ReferencePipeline.java:601)
+	at java.base/java.util.Optional.ifPresent(Optional.java:178)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+]]></failure>
+    <system-out><![CDATA[10:05:36.570 [main] INFO  com.intuit.karate - karate.env system property was: null 
+10:05:36.573 [main] DEBUG com.intuit.karate - request:
+1 > PATCH https://reqres.in/api/posts/1
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 25
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.11)
+1 > Accept-Encoding: gzip,deflate
+{"title":"Patched Title"}
+
+10:05:36.898 [main] DEBUG com.intuit.karate - response time in milliseconds: 324
+1 < 401
+1 < Date: Thu, 28 May 2026 15:05:36 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 895
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < Cache-Control: no-store
+1 < Cross-Origin-Opener-Policy: same-origin
+1 < Cross-Origin-Resource-Policy: same-origin
+1 < Etag: W/"37f-NsZXA5wLvj0UkmsYJbtRNgFYDoo"
+1 < Nel: {"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}
+1 < Origin-Agent-Cluster: ?1
+1 < Referrer-Policy: strict-origin-when-cross-origin
+1 < Report-To: {"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=YDSfnd3vsQJwts4qU4h0KUXKyAs8rSIHhAAzT%2FAp51Q%3D\u0026sid=c4c9725f-1ab0-44d8-820f-430df2718e11\u0026ts=1779980736"}],"max_age":3600}
+1 < Reporting-Endpoints: heroku-nel="https://nel.heroku.com/reports?s=YDSfnd3vsQJwts4qU4h0KUXKyAs8rSIHhAAzT%2FAp51Q%3D&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&ts=1779980736"
+1 < Server: cloudflare
+1 < Strict-Transport-Security: max-age=31536000; includeSubDomains
+1 < Via: 1.1 heroku-router
+1 < X-Content-Type-Options: nosniff
+1 < X-Dns-Prefetch-Control: off
+1 < X-Download-Options: noopen
+1 < X-Frame-Options: DENY
+1 < X-Permitted-Cross-Domain-Policies: none
+1 < X-Powered-By: ReqRes.in - Deploy backends in 30 seconds
+1 < X-Reqres-Docs: https://reqres.in
+1 < X-Reqres-Help: missing_api_key
+1 < X-Reqres-Message: This API is powered by ReqRes. Deploy your own backend in 30 seconds!
+1 < X-Reqres-Templates: https://app.reqres.in/templates
+1 < X-Reqres-Tip: Generate a complete backend from a description - app.reqres.in/dashboard
+1 < X-Reqres-Upgrade: https://app.reqres.in/upgrade
+1 < X-Request-Id: 79ccbc1b-e283-7800-d39f-d2fe7d7be75e
+1 < X-Robots-Tag: noindex, nofollow
+1 < X-Xss-Protection: 0
+1 < cf-cache-status: DYNAMIC
+1 < CF-RAY: a02e28929933492b-BOG
+{"error":"missing_api_key","message":"The x-api-key header is required for this endpoint.","hint":"Send x-api-key for admin calls (/api/*) or Authorization: Bearer <token> for app-user calls (/app/*).","next_steps":["Go to app.reqres.in/api-keys to get your key","Add header: x-api-key: <your_key>","For app user endpoints, use Authorization: Bearer <session_token> instead"],"docs_url":"https://app.reqres.in/docs#authentication","example_curl":"curl -H \"x-api-key: YOUR_API_KEY\" https://api.reqres.in/api/collections","_meta":{"powered_by":"ReqRes","docs_url":"https://app.reqres.in/documentation","upgrade_url":"https://app.reqres.in/upgrade","example_url":"https://app.reqres.in/examples/notes-app","variant":"v1_b","message":"Missing/invalid key. Grab a free key to keep responses consistent.","cta":{"label":"Get started","url":"https://app.reqres.in/api-keys"},"context":"invalid_key"}}
+
+10:05:36.900 [main] ERROR com.intuit.karate - classpath:com/co/choucair/ApiTest/api-test-karate.feature:56
+Then status 200
+status code was: 401, expected: 200, response time in milliseconds: 324, url: https://reqres.in/api/posts/1, response: 
+{"error":"missing_api_key","message":"The x-api-key header is required for this endpoint.","hint":"Send x-api-key for admin calls (/api/*) or Authorization: Bearer <token> for app-user calls (/app/*).","next_steps":["Go to app.reqres.in/api-keys to get your key","Add header: x-api-key: <your_key>","For app user endpoints, use Authorization: Bearer <session_token> instead"],"docs_url":"https://app.reqres.in/docs#authentication","example_curl":"curl -H \"x-api-key: YOUR_API_KEY\" https://api.reqres.in/api/collections","_meta":{"powered_by":"ReqRes","docs_url":"https://app.reqres.in/documentation","upgrade_url":"https://app.reqres.in/upgrade","example_url":"https://app.reqres.in/examples/notes-app","variant":"v1_b","message":"Missing/invalid key. Grab a free key to keep responses consistent.","cta":{"label":"Get started","url":"https://app.reqres.in/api-keys"},"context":"invalid_key"}}
+classpath:com/co/choucair/ApiTest/api-test-karate.feature:56
+]]></system-out>
+  </testcase>
+  <testcase name="[5:62] Eliminar un post (DELETE)" classname="com/co/choucair/ApiTest/api-test-karate" time="1.104">
+    <failure message="status code was: 401, expected: 200, response time in milliseconds: 326, url: https://reqres.in/api/posts/1, response: &#10;{&quot;error&quot;:&quot;missing_api_key&quot;,&quot;message&quot;:&quot;The x-api-key header is required for this endpoint.&quot;,&quot;hint&quot;:&quot;Send x-api-key for admin calls (/api/*) or Authorization: Bearer &lt;token&gt; for app-user calls (/app/*).&quot;,&quot;next_steps&quot;:[&quot;Go to app.reqres.in/api-keys to get your key&quot;,&quot;Add header: x-api-key: &lt;your_key&gt;&quot;,&quot;For app user endpoints, use Authorization: Bearer &lt;session_token&gt; instead&quot;],&quot;docs_url&quot;:&quot;https://app.reqres.in/docs#authentication&quot;,&quot;example_curl&quot;:&quot;curl -H \&quot;x-api-key: YOUR_API_KEY\&quot; https://api.reqres.in/api/collections&quot;,&quot;_meta&quot;:{&quot;powered_by&quot;:&quot;ReqRes&quot;,&quot;docs_url&quot;:&quot;https://app.reqres.in/documentation&quot;,&quot;upgrade_url&quot;:&quot;https://app.reqres.in/upgrade&quot;,&quot;example_url&quot;:&quot;https://app.reqres.in/examples/notes-app&quot;,&quot;variant&quot;:&quot;v1_b&quot;,&quot;message&quot;:&quot;Missing/invalid key. Grab a free key to keep responses consistent.&quot;,&quot;cta&quot;:{&quot;label&quot;:&quot;Get started&quot;,&quot;url&quot;:&quot;https://app.reqres.in/api-keys&quot;},&quot;context&quot;:&quot;invalid_key&quot;}}&#10;classpath:com/co/choucair/ApiTest/api-test-karate.feature:65" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: 
+status code was: 401, expected: 200, response time in milliseconds: 326, url: https://reqres.in/api/posts/1, response: 
+{"error":"missing_api_key","message":"The x-api-key header is required for this endpoint.","hint":"Send x-api-key for admin calls (/api/*) or Authorization: Bearer <token> for app-user calls (/app/*).","next_steps":["Go to app.reqres.in/api-keys to get your key","Add header: x-api-key: <your_key>","For app user endpoints, use Authorization: Bearer <session_token> instead"],"docs_url":"https://app.reqres.in/docs#authentication","example_curl":"curl -H \"x-api-key: YOUR_API_KEY\" https://api.reqres.in/api/collections","_meta":{"powered_by":"ReqRes","docs_url":"https://app.reqres.in/documentation","upgrade_url":"https://app.reqres.in/upgrade","example_url":"https://app.reqres.in/examples/notes-app","variant":"v1_b","message":"Missing/invalid key. Grab a free key to keep responses consistent.","cta":{"label":"Get started","url":"https://app.reqres.in/api-keys"},"context":"invalid_key"}}
+classpath:com/co/choucair/ApiTest/api-test-karate.feature:65
+	at com.intuit.karate.junit5.FeatureNode.lambda$next$1(FeatureNode.java:86)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1939)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEachOrdered(ReferencePipeline.java:601)
+	at java.base/java.util.Optional.ifPresent(Optional.java:178)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+]]></failure>
+    <system-out><![CDATA[10:05:36.907 [main] INFO  com.intuit.karate - karate.env system property was: null 
+10:05:36.909 [main] DEBUG com.intuit.karate - request:
+1 > DELETE https://reqres.in/api/posts/1
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.11)
+1 > Accept-Encoding: gzip,deflate
+
+
+10:05:37.236 [main] DEBUG com.intuit.karate - response time in milliseconds: 326
+1 < 401
+1 < Date: Thu, 28 May 2026 15:05:36 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 895
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < Cache-Control: no-store
+1 < Cross-Origin-Opener-Policy: same-origin
+1 < Cross-Origin-Resource-Policy: same-origin
+1 < Etag: W/"37f-NsZXA5wLvj0UkmsYJbtRNgFYDoo"
+1 < Nel: {"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}
+1 < Origin-Agent-Cluster: ?1
+1 < Referrer-Policy: strict-origin-when-cross-origin
+1 < Report-To: {"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=YDSfnd3vsQJwts4qU4h0KUXKyAs8rSIHhAAzT%2FAp51Q%3D\u0026sid=c4c9725f-1ab0-44d8-820f-430df2718e11\u0026ts=1779980736"}],"max_age":3600}
+1 < Reporting-Endpoints: heroku-nel="https://nel.heroku.com/reports?s=YDSfnd3vsQJwts4qU4h0KUXKyAs8rSIHhAAzT%2FAp51Q%3D&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&ts=1779980736"
+1 < Server: cloudflare
+1 < Strict-Transport-Security: max-age=31536000; includeSubDomains
+1 < Via: 1.1 heroku-router
+1 < X-Content-Type-Options: nosniff
+1 < X-Dns-Prefetch-Control: off
+1 < X-Download-Options: noopen
+1 < X-Frame-Options: DENY
+1 < X-Permitted-Cross-Domain-Policies: none
+1 < X-Powered-By: ReqRes.in - Deploy backends in 30 seconds
+1 < X-Reqres-Docs: https://reqres.in
+1 < X-Reqres-Help: missing_api_key
+1 < X-Reqres-Message: This API is powered by ReqRes. Deploy your own backend in 30 seconds!
+1 < X-Reqres-Templates: https://app.reqres.in/templates
+1 < X-Reqres-Tip: Need more than /api/users? Build custom collections - app.reqres.in/dashboard
+1 < X-Reqres-Upgrade: https://app.reqres.in/upgrade
+1 < X-Request-Id: 6fa65381-d74c-f323-b2e2-9790fe649f70
+1 < X-Robots-Tag: noindex, nofollow
+1 < X-Xss-Protection: 0
+1 < cf-cache-status: DYNAMIC
+1 < CF-RAY: a02e2894aec8da19-BOG
+{"error":"missing_api_key","message":"The x-api-key header is required for this endpoint.","hint":"Send x-api-key for admin calls (/api/*) or Authorization: Bearer <token> for app-user calls (/app/*).","next_steps":["Go to app.reqres.in/api-keys to get your key","Add header: x-api-key: <your_key>","For app user endpoints, use Authorization: Bearer <session_token> instead"],"docs_url":"https://app.reqres.in/docs#authentication","example_curl":"curl -H \"x-api-key: YOUR_API_KEY\" https://api.reqres.in/api/collections","_meta":{"powered_by":"ReqRes","docs_url":"https://app.reqres.in/documentation","upgrade_url":"https://app.reqres.in/upgrade","example_url":"https://app.reqres.in/examples/notes-app","variant":"v1_b","message":"Missing/invalid key. Grab a free key to keep responses consistent.","cta":{"label":"Get started","url":"https://app.reqres.in/api-keys"},"context":"invalid_key"}}
+
+10:05:37.237 [main] ERROR com.intuit.karate - classpath:com/co/choucair/ApiTest/api-test-karate.feature:65
+Then status 200
+status code was: 401, expected: 200, response time in milliseconds: 326, url: https://reqres.in/api/posts/1, response: 
+{"error":"missing_api_key","message":"The x-api-key header is required for this endpoint.","hint":"Send x-api-key for admin calls (/api/*) or Authorization: Bearer <token> for app-user calls (/app/*).","next_steps":["Go to app.reqres.in/api-keys to get your key","Add header: x-api-key: <your_key>","For app user endpoints, use Authorization: Bearer <session_token> instead"],"docs_url":"https://app.reqres.in/docs#authentication","example_curl":"curl -H \"x-api-key: YOUR_API_KEY\" https://api.reqres.in/api/collections","_meta":{"powered_by":"ReqRes","docs_url":"https://app.reqres.in/documentation","upgrade_url":"https://app.reqres.in/upgrade","example_url":"https://app.reqres.in/examples/notes-app","variant":"v1_b","message":"Missing/invalid key. Grab a free key to keep responses consistent.","cta":{"label":"Get started","url":"https://app.reqres.in/api-keys"},"context":"invalid_key"}}
+classpath:com/co/choucair/ApiTest/api-test-karate.feature:65
+---------------------------------------------------------
+feature: classpath:com/co/choucair/ApiTest/api-test-karate.feature
+scenarios:  5 | passed:  0 | failed:  5 | time: 2,8838
+---------------------------------------------------------
+
+Karate version: 1.5.0
+======================================================
+elapsed:   4,72 | threads:    1 | thread time: 2,88 
+features:     1 | skipped:    0 | efficiency: 0,61
+scenarios:    5 | passed:     0 | failed: 5
+======================================================
+>>> failed features:
+status code was: 401, expected: 200, response time in milliseconds: 865, url: https://reqres.in/api/posts, response: 
+{"error":"missing_api_key","message":"The x-api-key header is required for this endpoint.","hint":"Send x-api-key for admin calls (/api/*) or Authorization: Bearer <token> for app-user calls (/app/*).","next_steps":["Go to app.reqres.in/api-keys to get your key","Add header: x-api-key: <your_key>","For app user endpoints, use Authorization: Bearer <session_token> instead"],"docs_url":"https://app.reqres.in/docs#authentication","example_curl":"curl -H \"x-api-key: YOUR_API_KEY\" https://api.reqres.in/api/collections","_meta":{"powered_by":"ReqRes","docs_url":"https://app.reqres.in/documentation","upgrade_url":"https://app.reqres.in/upgrade","example_url":"https://app.reqres.in/examples/notes-app","variant":"v1_b","message":"Missing/invalid key. Grab a free key to keep responses consistent.","cta":{"label":"Get started","url":"https://app.reqres.in/api-keys"},"context":"invalid_key"}}
+classpath:com/co/choucair/ApiTest/api-test-karate.feature:12
+status code was: 401, expected: 201, response time in milliseconds: 536, url: https://reqres.in/api/posts, response: 
+{"error":"missing_api_key","message":"The x-api-key header is required for this endpoint.","hint":"Send x-api-key for admin calls (/api/*) or Authorization: Bearer <token> for app-user calls (/app/*).","next_steps":["Go to app.reqres.in/api-keys to get your key","Add header: x-api-key: <your_key>","For app user endpoints, use Authorization: Bearer <session_token> instead"],"docs_url":"https://app.reqres.in/docs#authentication","example_curl":"curl -H \"x-api-key: YOUR_API_KEY\" https://api.reqres.in/api/collections","_meta":{"powered_by":"ReqRes","docs_url":"https://app.reqres.in/documentation","upgrade_url":"https://app.reqres.in/upgrade","example_url":"https://app.reqres.in/examples/notes-app","variant":"v1_b","message":"Missing/invalid key. Grab a free key to keep responses consistent.","cta":{"label":"Get started","url":"https://app.reqres.in/api-keys"},"context":"invalid_key"}}
+classpath:com/co/choucair/ApiTest/api-test-karate.feature:26
+status code was: 401, expected: 200, response time in milliseconds: 474, url: https://reqres.in/api/posts/1, response: 
+{"error":"missing_api_key","message":"The x-api-key header is required for this endpoint.","hint":"Send x-api-key for admin calls (/api/*) or Authorization: Bearer <token> for app-user calls (/app/*).","next_steps":["Go to app.reqres.in/api-keys to get your key","Add header: x-api-key: <your_key>","For app user endpoints, use Authorization: Bearer <session_token> instead"],"docs_url":"https://app.reqres.in/docs#authentication","example_curl":"curl -H \"x-api-key: YOUR_API_KEY\" https://api.reqres.in/api/collections","_meta":{"powered_by":"ReqRes","docs_url":"https://app.reqres.in/documentation","upgrade_url":"https://app.reqres.in/upgrade","example_url":"https://app.reqres.in/examples/notes-app","variant":"v1_b","message":"Missing/invalid key. Grab a free key to keep responses consistent.","cta":{"label":"Get started","url":"https://app.reqres.in/api-keys"},"context":"invalid_key"}}
+classpath:com/co/choucair/ApiTest/api-test-karate.feature:43
+status code was: 401, expected: 200, response time in milliseconds: 324, url: https://reqres.in/api/posts/1, response: 
+{"error":"missing_api_key","message":"The x-api-key header is required for this endpoint.","hint":"Send x-api-key for admin calls (/api/*) or Authorization: Bearer <token> for app-user calls (/app/*).","next_steps":["Go to app.reqres.in/api-keys to get your key","Add header: x-api-key: <your_key>","For app user endpoints, use Authorization: Bearer <session_token> instead"],"docs_url":"https://app.reqres.in/docs#authentication","example_curl":"curl -H \"x-api-key: YOUR_API_KEY\" https://api.reqres.in/api/collections","_meta":{"powered_by":"ReqRes","docs_url":"https://app.reqres.in/documentation","upgrade_url":"https://app.reqres.in/upgrade","example_url":"https://app.reqres.in/examples/notes-app","variant":"v1_b","message":"Missing/invalid key. Grab a free key to keep responses consistent.","cta":{"label":"Get started","url":"https://app.reqres.in/api-keys"},"context":"invalid_key"}}
+classpath:com/co/choucair/ApiTest/api-test-karate.feature:56
+status code was: 401, expected: 200, response time in milliseconds: 326, url: https://reqres.in/api/posts/1, response: 
+{"error":"missing_api_key","message":"The x-api-key header is required for this endpoint.","hint":"Send x-api-key for admin calls (/api/*) or Authorization: Bearer <token> for app-user calls (/app/*).","next_steps":["Go to app.reqres.in/api-keys to get your key","Add header: x-api-key: <your_key>","For app user endpoints, use Authorization: Bearer <session_token> instead"],"docs_url":"https://app.reqres.in/docs#authentication","example_curl":"curl -H \"x-api-key: YOUR_API_KEY\" https://api.reqres.in/api/collections","_meta":{"powered_by":"ReqRes","docs_url":"https://app.reqres.in/documentation","upgrade_url":"https://app.reqres.in/upgrade","example_url":"https://app.reqres.in/examples/notes-app","variant":"v1_b","message":"Missing/invalid key. Grab a free key to keep responses consistent.","cta":{"label":"Get started","url":"https://app.reqres.in/api-keys"},"context":"invalid_key"}}
+classpath:com/co/choucair/ApiTest/api-test-karate.feature:65
+<<<
+
+HTML report: (paste into browser to view) | Karate version: 1.5.0
+file:///C:/Users/emartineza/Downloads/KarateApiTests/target/karate-reports/karate-summary.html
+===================================================================
+
+]]></system-out>
+  </testcase>
+</testsuite>

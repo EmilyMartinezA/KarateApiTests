@@ -1,0 +1,114 @@
+-------------------------------------------------------------------------------
+Test set: com.co.choucair.ApiTest.TestRunner
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 5, Errors: 0, Skipped: 0, Time elapsed: 5.59 s <<< FAILURE! - in com.co.choucair.ApiTest.TestRunner
+com/co/choucair/ApiTest/api-test-karate.[1:9] Obtener lista de posts (GET)  Time elapsed: 2.193 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+status code was: 401, expected: 200, response time in milliseconds: 865, url: https://reqres.in/api/posts, response: 
+{"error":"missing_api_key","message":"The x-api-key header is required for this endpoint.","hint":"Send x-api-key for admin calls (/api/*) or Authorization: Bearer <token> for app-user calls (/app/*).","next_steps":["Go to app.reqres.in/api-keys to get your key","Add header: x-api-key: <your_key>","For app user endpoints, use Authorization: Bearer <session_token> instead"],"docs_url":"https://app.reqres.in/docs#authentication","example_curl":"curl -H \"x-api-key: YOUR_API_KEY\" https://api.reqres.in/api/collections","_meta":{"powered_by":"ReqRes","docs_url":"https://app.reqres.in/documentation","upgrade_url":"https://app.reqres.in/upgrade","example_url":"https://app.reqres.in/examples/notes-app","variant":"v1_b","message":"Missing/invalid key. Grab a free key to keep responses consistent.","cta":{"label":"Get started","url":"https://app.reqres.in/api-keys"},"context":"invalid_key"}}
+classpath:com/co/choucair/ApiTest/api-test-karate.feature:12
+	at com.intuit.karate.junit5.FeatureNode.lambda$next$1(FeatureNode.java:86)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1939)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEachOrdered(ReferencePipeline.java:601)
+	at java.base/java.util.Optional.ifPresent(Optional.java:178)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+com/co/choucair/ApiTest/api-test-karate.[2:22] Crear un nuevo post (POST)  Time elapsed: 0.603 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+status code was: 401, expected: 201, response time in milliseconds: 536, url: https://reqres.in/api/posts, response: 
+{"error":"missing_api_key","message":"The x-api-key header is required for this endpoint.","hint":"Send x-api-key for admin calls (/api/*) or Authorization: Bearer <token> for app-user calls (/app/*).","next_steps":["Go to app.reqres.in/api-keys to get your key","Add header: x-api-key: <your_key>","For app user endpoints, use Authorization: Bearer <session_token> instead"],"docs_url":"https://app.reqres.in/docs#authentication","example_curl":"curl -H \"x-api-key: YOUR_API_KEY\" https://api.reqres.in/api/collections","_meta":{"powered_by":"ReqRes","docs_url":"https://app.reqres.in/documentation","upgrade_url":"https://app.reqres.in/upgrade","example_url":"https://app.reqres.in/examples/notes-app","variant":"v1_b","message":"Missing/invalid key. Grab a free key to keep responses consistent.","cta":{"label":"Get started","url":"https://app.reqres.in/api-keys"},"context":"invalid_key"}}
+classpath:com/co/choucair/ApiTest/api-test-karate.feature:26
+	at com.intuit.karate.junit5.FeatureNode.lambda$next$1(FeatureNode.java:86)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1939)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEachOrdered(ReferencePipeline.java:601)
+	at java.base/java.util.Optional.ifPresent(Optional.java:178)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+com/co/choucair/ApiTest/api-test-karate.[3:37] Actualizar un post (PUT)  Time elapsed: 0.495 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+status code was: 401, expected: 200, response time in milliseconds: 474, url: https://reqres.in/api/posts/1, response: 
+{"error":"missing_api_key","message":"The x-api-key header is required for this endpoint.","hint":"Send x-api-key for admin calls (/api/*) or Authorization: Bearer <token> for app-user calls (/app/*).","next_steps":["Go to app.reqres.in/api-keys to get your key","Add header: x-api-key: <your_key>","For app user endpoints, use Authorization: Bearer <session_token> instead"],"docs_url":"https://app.reqres.in/docs#authentication","example_curl":"curl -H \"x-api-key: YOUR_API_KEY\" https://api.reqres.in/api/collections","_meta":{"powered_by":"ReqRes","docs_url":"https://app.reqres.in/documentation","upgrade_url":"https://app.reqres.in/upgrade","example_url":"https://app.reqres.in/examples/notes-app","variant":"v1_b","message":"Missing/invalid key. Grab a free key to keep responses consistent.","cta":{"label":"Get started","url":"https://app.reqres.in/api-keys"},"context":"invalid_key"}}
+classpath:com/co/choucair/ApiTest/api-test-karate.feature:43
+	at com.intuit.karate.junit5.FeatureNode.lambda$next$1(FeatureNode.java:86)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1939)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEachOrdered(ReferencePipeline.java:601)
+	at java.base/java.util.Optional.ifPresent(Optional.java:178)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+com/co/choucair/ApiTest/api-test-karate.[4:50] Actualizar parcialmente un post (PATCH)  Time elapsed: 0.335 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+status code was: 401, expected: 200, response time in milliseconds: 324, url: https://reqres.in/api/posts/1, response: 
+{"error":"missing_api_key","message":"The x-api-key header is required for this endpoint.","hint":"Send x-api-key for admin calls (/api/*) or Authorization: Bearer <token> for app-user calls (/app/*).","next_steps":["Go to app.reqres.in/api-keys to get your key","Add header: x-api-key: <your_key>","For app user endpoints, use Authorization: Bearer <session_token> instead"],"docs_url":"https://app.reqres.in/docs#authentication","example_curl":"curl -H \"x-api-key: YOUR_API_KEY\" https://api.reqres.in/api/collections","_meta":{"powered_by":"ReqRes","docs_url":"https://app.reqres.in/documentation","upgrade_url":"https://app.reqres.in/upgrade","example_url":"https://app.reqres.in/examples/notes-app","variant":"v1_b","message":"Missing/invalid key. Grab a free key to keep responses consistent.","cta":{"label":"Get started","url":"https://app.reqres.in/api-keys"},"context":"invalid_key"}}
+classpath:com/co/choucair/ApiTest/api-test-karate.feature:56
+	at com.intuit.karate.junit5.FeatureNode.lambda$next$1(FeatureNode.java:86)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1939)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEachOrdered(ReferencePipeline.java:601)
+	at java.base/java.util.Optional.ifPresent(Optional.java:178)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+com/co/choucair/ApiTest/api-test-karate.[5:62] Eliminar un post (DELETE)  Time elapsed: 1.104 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+status code was: 401, expected: 200, response time in milliseconds: 326, url: https://reqres.in/api/posts/1, response: 
+{"error":"missing_api_key","message":"The x-api-key header is required for this endpoint.","hint":"Send x-api-key for admin calls (/api/*) or Authorization: Bearer <token> for app-user calls (/app/*).","next_steps":["Go to app.reqres.in/api-keys to get your key","Add header: x-api-key: <your_key>","For app user endpoints, use Authorization: Bearer <session_token> instead"],"docs_url":"https://app.reqres.in/docs#authentication","example_curl":"curl -H \"x-api-key: YOUR_API_KEY\" https://api.reqres.in/api/collections","_meta":{"powered_by":"ReqRes","docs_url":"https://app.reqres.in/documentation","upgrade_url":"https://app.reqres.in/upgrade","example_url":"https://app.reqres.in/examples/notes-app","variant":"v1_b","message":"Missing/invalid key. Grab a free key to keep responses consistent.","cta":{"label":"Get started","url":"https://app.reqres.in/api-keys"},"context":"invalid_key"}}
+classpath:com/co/choucair/ApiTest/api-test-karate.feature:65
+	at com.intuit.karate.junit5.FeatureNode.lambda$next$1(FeatureNode.java:86)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1939)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEachOrdered(ReferencePipeline.java:601)
+	at java.base/java.util.Optional.ifPresent(Optional.java:178)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+

@@ -1,2 +1,2 @@
-examples\ExamplesTest.class
-examples\users\UsersRunner.class
+com\co\choucair\ExamplesTest.class
+com\co\choucair\ApiTest\TestRunner.class
