@@ -31,7 +31,7 @@ Una vez se tenga el ambiente configurado, seguir estos pasos:
 
 1. Clonar el repositorio del proyecto desde el sistema de control de versiones:
 
-   git clone <>
+   git clone https://github.com/EmilyMartinezA/KarateApiTests
 
 2. Ingresar al directorio del proyecto:
 
