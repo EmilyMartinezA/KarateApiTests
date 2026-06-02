@@ -30,17 +30,17 @@ Para ejecutar este proyecto de pruebas automatizadas, es necesario contar con lo
 Una vez se tenga el ambiente configurado, seguir estos pasos:
 
 1. Clonar el repositorio del proyecto desde el sistema de control de versiones:
-
+```bash
    git clone https://github.com/EmilyMartinezA/KarateApiTests
-
+```
 2. Ingresar al directorio del proyecto:
-
+```bash
    cd KarateApiTests
-
+```
 3. Ejecutar las pruebas automatizadas utilizando Maven:
-
+```bash
    mvn test
-
+```
 El proyecto permite ejecutar las pruebas en diferentes ambientes mediante la variable `karate.env`. Por ejemplo:
 
 mvn test -Dkarate.env=dev
@@ -48,9 +48,9 @@ mvn test -Dkarate.env=dev
 Durante la ejecución, Karate generará reportes automáticos con el detalle de cada escenario, incluyendo las solicitudes (request), respuestas (response) y validaciones realizadas.
 
 Los reportes se pueden encontrar en la siguiente ruta dentro del proyecto:
-
+```bash
 target/karate-reports
-
+```
 Se recomienda abrir el archivo HTML generado para visualizar los resultados de manera detallada.
 
 ---

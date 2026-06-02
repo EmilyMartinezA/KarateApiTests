@@ -37,7 +37,6 @@ Feature: Automatizacion de pruebas de API REST con Karate
 
     And match response.title == 'Actualizacion titulo'
 
-
   # DELETE: Elimininas post creado
     Given path 'posts', createdId
     When method DELETE
